@@ -1,7 +1,12 @@
 #!/bin/bash
+RED='\033[00;31m'
+
 echo "Enter Your commit message: "
+
 read my_var
+
 git add .
 git commit -m "${my_var}"
 git push
-echo "\033[00;35m ${my_var} has been pushed!"
+
+echo "${GREEN} ${my_var} has been pushed!"
